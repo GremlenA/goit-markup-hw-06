@@ -624,7 +624,7 @@ footer-block {
   text-decoration: none;
 }
 /* Mobail-section2 */
-@media screen and (min-width: 320x)
+@media screen and (min-width: 320px)
 {
   .feature-list
   {
