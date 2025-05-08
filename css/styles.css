@@ -1,0 +1,649 @@
+/* === Базовые стили === */
+body {
+  color: #434455;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* === Общие заголовки === */
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+h2 p {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+:root {
+  --accent-color: #4d5ae5;
+}
+
+/* === Header === */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+              0px 1px 1px rgba(46, 47, 66, 0.16),
+              0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+/* базовый контейнер */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+
+.logo-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  margin-right: 76px;
+  margin-bottom: 50px;
+ margin: 25.5px;
+ text-decoration: none;
+}
+
+.logo-header > span {
+  color: #2e2f42;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+}
+
+.navhed {
+  display: flex;
+  align-items: center;
+
+}
+
+/* === Menu === */
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+  padding: 24px 0;
+}
+
+.menu li:first-child .menu-item {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.menu li:first-child .menu-item::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: #404bbf;
+}
+
+/* === Контакты === */
+.contact-info {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  color: #434455;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-bloc {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+  position: absolute;
+  right: 322px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+/* === Order (Секция 1) === */
+.order {
+  padding: 188px 0;
+  background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+  max-width: 1440px;
+  margin:0 auto;
+}
+
+.baner {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+  position: relative;
+}
+
+.banersk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knopka {
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 300px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.knopka:hover,
+.knopka:focus {
+  background-color: #404bbf;
+}
+
+.button {
+  background-color: #2e2f42;
+}
+
+/* === Features (Секция 2) === */
+.sektion-two {
+  padding: 120px 0;
+}
+
+.heder-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.feature-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.feature-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-bottom: 8px;
+
+}
+.svg-icon
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+
+/* === Team (Секция 3) === */
+.team-section {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding: 32px 0;
+}
+
+.team-card {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+}
+
+.team-text {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.member-role {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: center;
+}
+
+.img-tem {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.social-team
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  
+}
+.social-team li {
+  width: 40px;
+  height: 40px;
+}
+.privat-social
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.privat-social:hover,.privat-social:focus
+ {
+  background-color:#404bbf;
+ }
+ .social-piople
+ {
+  fill:#f4f4fd ;
+ }
+/* === Portfolio (Секция 4) === */
+.portfolio {
+  padding: 120px 0;
+  
+}
+.portfolio-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin: 0;
+  padding: 0;
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-app {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: var(--accent-color);
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-app:hover .portfolio-overlay {
+  transform: translateY(0%);
+}
+.portfolio-app {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-app:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+              0px 1px 1px rgba(46, 47, 66, 0.16),
+              0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+.app {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* === Footer === */
+.main-footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer {
+  width: 1158px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+
+.footer-content {
+  width: 264px;
+  margin-right: 120px; 
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-span {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.footer-social-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
+}
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscribe-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+footer-block {
+  width: 264px;
+}
+
+.footer-social-block {
+  width: 208px;
+}
+
+.footer-subscribe {
+  width: 453px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.subscribe-input::placeholder {
+  color: #ffffff;
+}
+
+.subscribe-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+}
+
+/* === Прочее === */
+.logo-span {
+  color: #f4f4fd;
+}
+
+.facture ul {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.munu > a {
+  text-decoration: none;
+}
+/* Mobail-section2 */
+@media screen and (min-width: 320x)
+{
+  .feature-list
+  {
+ display: block;
+  margin: 0 auto;
+  max-width: 288px;
+  gap: 72px;
+  padding: 18px;
+  }
+  .svg-icon
+  {
+    display: none;
+  }
+  .feature-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 111%;
+    text-align: center;
+  }
+  
+
+}
