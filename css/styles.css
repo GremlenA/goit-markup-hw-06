@@ -8,7 +8,9 @@ body {
 :root {
   --checkbox-bg-checked: #404bbf;
   --checkbox-icon-fill-checked: #f4f4fd;
+  --accent-color: #4d5ae5;
 }
+
 img {
   display: block;
 }
@@ -18,6 +20,19 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+h2 p {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* === Общие заголовки === */
@@ -522,14 +537,22 @@ h2 p {
   padding: 100px 0;
 }
 .footer {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-wrap: nowrap;
+  gap: unset;
 }
+.footer-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 
 
 .footer-content {
@@ -549,22 +572,26 @@ h2 p {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  display: inline-block;
   margin-bottom: 16px;
 }
 
-.logo-span {
-  color: #f4f4fd;
+.footer-logo .logo-span {
+  color: #ffffff;
 }
+
 
 .footer-text {
-  color: #f4f4fd;
+  width: 100%;
+  max-width: 268px;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0.02em;
-  max-width: 264px;
-  margin-bottom: 16px;
-  margin-top: 0;
+  text-align: left;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  word-break: break-word;
 }
 
 .footer-social-block {
@@ -628,9 +655,16 @@ h2 p {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-footer-block {
-  width: 264px;
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 96px;
+  max-width: 268px;
+  margin: 0;
+  gap: 16px;
 }
+
 
 .footer-social-block {
   width: 208px;
@@ -1155,7 +1189,7 @@ input[type="checkbox"]:checked ~ label .checkbox-custom {
   }
 
 
-  .footer {
+   .footer {
     padding: 60px 15px;
     max-width: 768px;
     margin: 0 auto;
@@ -1179,14 +1213,14 @@ input[type="checkbox"]:checked ~ label .checkbox-custom {
 
   .footer-flex-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 24px;
     flex-wrap: wrap;
+    gap: 24px;
   }
 
-  .footer .footer-block,
-  .footer .footer-social-block {
+
+   .footer-block,
+  .footer-social-block {
     width: calc(50% - 12px);
   }
 
